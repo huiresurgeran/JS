@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="styles/slide.css"/>
+    <title>CSS3点击显示</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="scripts/slide.js"></script>
+    <input type='checkbox' id='sideToggle'>
+    <aside>
+      <h2>Menu</h2>
+      <div id="patterns">
+        <div>
+          <img class="radial" src="images/放射状导图1.png" alt="放射状导图">
+        </div>
+        <div>
+          <img class="tree" src="images/树状导图1.png" alt="树状导图">
+        </div>
+        <div>
+          <img class="right" src="images/向右导图1.png" alt="向右导图">
+        </div>
+        <div>
+          <img class="organization" src="images/组织状导图1.png" alt="组织状导图">
+        </div>
+         <div>
+          <img class="save" src="images/save.png" alt="save">
+        </div>
+      </div>
+    </aside>
+    <div id='wrap'> 
+      <label id='sideMenuControl' for='sideToggle'>=</label>
+      <p>侧边框</p>
+    </div>
+    <div id="element">
+      <input type="button" onclick="showDlg();" value="element"/>
+      <a href="javascript:;" onClick=showDlg()>element</a>
+      <div id="divBox" class="hideDlg" style="" >
+            <table width="100%" style="height:100%; width: 100%;" id="table1">
+                    <tr>
+                        <td style="height: 20px; text-align: center;" colspan="3">请输入元素内容</td>
+                    </tr>
+                    <tr>
+                        <td>内容&nbsp;</td>
+                        <td>
+                            <input name="TextBox1" type="text" id="TextBox1" />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="Button1" value="Login" id="Button1" size="10" onclick="alert(TextBox1.value)"/>&nbsp;&nbsp;
+                            <input type="button" name="Button2" value="Cancel" id="Button2" size="10" onclick="cancel();" />
+                            </td>
+                        <td>&nbsp;</td>
+                    </tr>
+            </table>
+      </div>
+    </div>
+  </body>
+</html>
